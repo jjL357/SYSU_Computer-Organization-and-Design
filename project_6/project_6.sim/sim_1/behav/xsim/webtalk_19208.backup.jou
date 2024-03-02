@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Sun Dec 18 08:53:29 2022
+# Process ID: 19208
+# Current directory: D:/project_6/project_6.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source D:/project_6/project_6.sim/sim_1/behav/xsim/xsim.dir/PipelineCPU_sim_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: D:/project_6/project_6.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: D:/project_6/project_6.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source D:/project_6/project_6.sim/sim_1/behav/xsim/xsim.dir/PipelineCPU_sim_behav/webtalk/xsim_webtalk.tcl -notrace

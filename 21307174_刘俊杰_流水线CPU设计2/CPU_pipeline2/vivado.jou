@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Sat Dec  3 19:21:31 2022
+# Process ID: 900
+# Current directory: D:/CPU_pipeline2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent29284 D:\CPU_pipeline2\CPU_pipeline2.xpr
+# Log file: D:/CPU_pipeline2/vivado.log
+# Journal file: D:/CPU_pipeline2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/CPU_pipeline2/CPU_pipeline2.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source CPU_sim.tcl
+run 10 us
+close_sim

@@ -1,0 +1,32 @@
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto 549ccf4708b641f5a5c5ab05a61bfc81 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot PipelineCPU_sim_behav xil_defaultlib.PipelineCPU_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.HazardDetectUnit
+Compiling module xil_defaultlib.MUX(width=32)
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.PCAdd4
+Compiling module xil_defaultlib.InsMem
+Compiling module xil_defaultlib.IFIDRegister
+Compiling module xil_defaultlib.Control
+Compiling module xil_defaultlib.ForwardUnit2
+Compiling module xil_defaultlib.SignExtend
+Compiling module xil_defaultlib.Registers
+Compiling module xil_defaultlib.MUX3to1
+Compiling module xil_defaultlib.IDEXRegister
+Compiling module xil_defaultlib.ForwardUnit
+Compiling module xil_defaultlib.ALUcontrol
+Compiling module xil_defaultlib.MUX(width=5)
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.ExMemRegister
+Compiling module xil_defaultlib.DataMemory
+Compiling module xil_defaultlib.MEMWBRegister
+Compiling module xil_defaultlib.PipelineCPU
+Compiling module xil_defaultlib.PipelineCPU_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot PipelineCPU_sim_behav

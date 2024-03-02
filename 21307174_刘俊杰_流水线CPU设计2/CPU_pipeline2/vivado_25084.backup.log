@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Sat Dec  3 01:48:12 2022
+# Process ID: 25084
+# Current directory: D:/CPU_pipeline2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13640 D:\CPU_pipeline2\CPU_pipeline2.xpr
+# Log file: D:/CPU_pipeline2/vivado.log
+# Journal file: D:/CPU_pipeline2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/CPU_pipeline2/CPU_pipeline2.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2018.1/data/ip'.
+INFO: [IP_Flow 19-2338] Canceling the changes to the IP catalog. Reverting the catalog back to its previous state.
+INFO: [IP_Flow 19-2340] The IP catalog has been returned to its previous state.
+INFO: [Common 17-344] 'open_project' was cancelled
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Dec  3 01:48:37 2022...

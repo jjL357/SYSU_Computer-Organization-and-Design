@@ -1,0 +1,118 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
+| Date         : Sat Dec  3 11:15:50 2022
+| Host         : LAPTOP-D4PKTBDK running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file display_control_sets_placed.rpt
+| Design       : display
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    51 |
+| Unused register locations in slices containing registers |    60 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |            4 |
+|      2 |            1 |
+|      6 |            2 |
+|    16+ |           44 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             417 |          140 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             133 |           49 |
+| Yes          | No                    | No                     |            1024 |          435 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              30 |            8 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------+-----------------------------------------------+------------------------------------+------------------+----------------+
+|   Clock Signal  |                 Enable Signal                 |          Set/Reset Signal          | Slice Load Count | Bel Load Count |
++-----------------+-----------------------------------------------+------------------------------------+------------------+----------------+
+|  BtnC_IBUF_BUFG |                                               |                                    |                1 |              1 |
+|  divclk_BUFG    |                                               | choose[3]_i_1_n_3                  |                1 |              1 |
+|  divclk_BUFG    |                                               | temp[1]                            |                1 |              1 |
+|  clk_IBUF_BUFG  |                                               |                                    |                1 |              1 |
+|  divclk_BUFG    |                                               | temp[0]                            |                1 |              2 |
+|  BtnL_IBUF_BUFG |                                               |                                    |                2 |              6 |
+|  divclk_BUFG    |                                               |                                    |                4 |              6 |
+|  divclk_BUFG    |                                               | temp[0]_i_1_n_3                    |                6 |             24 |
+| ~n_0_1748_BUFG  | nolabel_line74/hdu1/count[31]_i_1_n_3         | nolabel_line74/idex/SR[0]          |                8 |             30 |
+|  clk_IBUF_BUFG  |                                               | clear                              |                8 |             32 |
+| ~n_0_1748_BUFG  | nolabel_line74/mem1/registers_reg[20][31][0]  |                                    |               12 |             32 |
+| ~n_0_1748_BUFG  | nolabel_line74/mem1/registers_reg[26][31][0]  |                                    |                9 |             32 |
+|  n_0_1748_BUFG  |                                               | nolabel_line74/idex/result21       |               16 |             32 |
+| ~n_0_1748_BUFG  | nolabel_line74/mem1/registers_reg[27][31][0]  |                                    |               12 |             32 |
+| ~n_0_1748_BUFG  | nolabel_line74/mem1/registers_reg[6][31][0]   |                                    |               18 |             32 |
+| ~n_0_1748_BUFG  | nolabel_line74/idex/SR[0]                     |                                    |                9 |             32 |
+| ~n_0_1748_BUFG  | nolabel_line74/ifid/E[0]                      |                                    |                7 |             32 |
+| ~n_0_1748_BUFG  | nolabel_line74/mem1/E[0]                      |                                    |               17 |             32 |
+| ~n_0_1748_BUFG  | nolabel_line74/mem1/registers_reg[12][31][0]  |                                    |               13 |             32 |
+| ~n_0_1748_BUFG  | nolabel_line74/mem1/registers_reg[17][31][0]  |                                    |               16 |             32 |
+| ~n_0_1748_BUFG  | nolabel_line74/mem1/registers_reg[18][31][0]  |                                    |               11 |             32 |
+| ~n_0_1748_BUFG  | nolabel_line74/mem1/registers_reg[19][31][0]  |                                    |               15 |             32 |
+| ~n_0_1748_BUFG  | nolabel_line74/mem1/registers_reg[10][31][0]  |                                    |               12 |             32 |
+| ~n_0_1748_BUFG  | nolabel_line74/mem1/registers_reg[13][31][0]  |                                    |               13 |             32 |
+| ~n_0_1748_BUFG  | nolabel_line74/mem1/registers_reg[11][31][0]  |                                    |               15 |             32 |
+| ~n_0_1748_BUFG  | nolabel_line74/mem1/registers_reg[14][31][0]  |                                    |               13 |             32 |
+| ~n_0_1748_BUFG  | nolabel_line74/mem1/registers_reg[15][31][0]  |                                    |               15 |             32 |
+| ~n_0_1748_BUFG  | nolabel_line74/mem1/registers_reg[29][31][0]  |                                    |               16 |             32 |
+| ~n_0_1748_BUFG  | nolabel_line74/mem1/registers_reg[24][31][0]  |                                    |                7 |             32 |
+| ~n_0_1748_BUFG  | nolabel_line74/mem1/registers_reg[7][31][0]   |                                    |               21 |             32 |
+| ~n_0_1748_BUFG  | nolabel_line74/mem1/registers_reg[8][31][0]   |                                    |               13 |             32 |
+| ~n_0_1748_BUFG  | nolabel_line74/mem1/registers_reg[23][31][0]  |                                    |               20 |             32 |
+| ~n_0_1748_BUFG  | nolabel_line74/mem1/registers_reg[9][31][0]   |                                    |               21 |             32 |
+| ~n_0_1748_BUFG  | nolabel_line74/mem1/registers_reg[22][31][0]  |                                    |               15 |             32 |
+| ~n_0_1748_BUFG  | nolabel_line74/mem1/registers_reg[1][31]_0[0] |                                    |               17 |             32 |
+| ~n_0_1748_BUFG  | nolabel_line74/mem1/registers_reg[21][31][0]  |                                    |               13 |             32 |
+| ~n_0_1748_BUFG  | nolabel_line74/mem1/registers_reg[2][31][0]   |                                    |               13 |             32 |
+| ~n_0_1748_BUFG  | nolabel_line74/mem1/registers_reg[5][31][0]   |                                    |               12 |             32 |
+| ~n_0_1748_BUFG  | nolabel_line74/mem1/registers_reg[28][31][0]  |                                    |               10 |             32 |
+| ~n_0_1748_BUFG  | nolabel_line74/mem1/registers_reg[30][31][0]  |                                    |               21 |             32 |
+| ~n_0_1748_BUFG  | nolabel_line74/mem1/registers_reg[25][31][0]  |                                    |                8 |             32 |
+| ~n_0_1748_BUFG  | nolabel_line74/mem1/registers_reg[3][31][0]   |                                    |               10 |             32 |
+| ~n_0_1748_BUFG  | nolabel_line74/mem1/registers_reg[4][31][0]   |                                    |               11 |             32 |
+|  n_0_1748_BUFG  |                                               | nolabel_line74/hdu1/insout_reg[31] |               16 |             41 |
+|  n_1_1646_BUFG  | nolabel_line74/ex1/resultout_reg[0]_0         |                                    |               16 |             64 |
+|  n_1_1646_BUFG  | nolabel_line74/ex1/result_reg[2]              |                                    |               16 |             64 |
+|  n_2_1648_BUFG  | nolabel_line74/ex1/resultout_reg[0]_0         |                                    |               16 |             64 |
+|  n_2_1648_BUFG  | nolabel_line74/ex1/result_reg[2]              |                                    |               16 |             64 |
+| ~n_0_1748_BUFG  |                                               |                                    |               24 |             66 |
+|  clk0           |                                               |                                    |               47 |            166 |
+|  n_0_1748_BUFG  |                                               |                                    |               61 |            171 |
++-----------------+-----------------------------------------------+------------------------------------+------------------+----------------+
+
+

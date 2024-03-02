@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Sun Nov 20 11:33:10 2022
+# Process ID: 39260
+# Current directory: D:/CPU_single_circle2/CPU_single_circle2.runs/synth_1
+# Command line: vivado.exe -log CPU.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source CPU.tcl
+# Log file: D:/CPU_single_circle2/CPU_single_circle2.runs/synth_1/CPU.vds
+# Journal file: D:/CPU_single_circle2/CPU_single_circle2.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source CPU.tcl -notrace

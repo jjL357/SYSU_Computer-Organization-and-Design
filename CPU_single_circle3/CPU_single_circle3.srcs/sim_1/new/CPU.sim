@@ -1,0 +1,8 @@
+`timescale 1ns / 1ps
+
+module CPU_sim();
+reg clk=0;
+wire[15:0]q;
+CPU C1(clk,q);
+always #5 clk=~clk;
+endmodule

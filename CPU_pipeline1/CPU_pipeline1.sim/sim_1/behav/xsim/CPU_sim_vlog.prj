@@ -1,0 +1,23 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../CPU_pipeline1.srcs/sources_1/new/ALU.v" \
+"../../../../CPU_pipeline1.srcs/sources_1/new/ALUControl.v" \
+"../../../../CPU_pipeline1.srcs/sources_1/new/CPU.v" \
+"../../../../CPU_pipeline1.srcs/sources_1/new/Control.v" \
+"../../../../CPU_pipeline1.srcs/sources_1/new/DataMem.v" \
+"../../../../CPU_pipeline1.srcs/sources_1/new/EXMEM_Registers.v" \
+"../../../../CPU_pipeline1.srcs/sources_1/new/IDEX_Registers.v" \
+"../../../../CPU_pipeline1.srcs/sources_1/new/IFID_Registers.v" \
+"../../../../CPU_pipeline1.srcs/sources_1/new/InsMem.v" \
+"../../../../CPU_pipeline1.srcs/sources_1/new/MEMWB_Registers.v" \
+"../../../../CPU_pipeline1.srcs/sources_1/new/Mulx.v" \
+"../../../../CPU_pipeline1.srcs/sources_1/new/PC.v" \
+"../../../../CPU_pipeline1.srcs/sources_1/new/PCAdder4.v" \
+"../../../../CPU_pipeline1.srcs/sources_1/new/Registers.v" \
+"../../../../CPU_pipeline1.srcs/sim_1/new/CPU_sim.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

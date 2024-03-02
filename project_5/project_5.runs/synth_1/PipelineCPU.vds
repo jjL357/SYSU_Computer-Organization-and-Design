@@ -1,0 +1,628 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Nov 29 20:48:38 2022
+# Process ID: 124200
+# Current directory: D:/Vivado/PipelineCPU/PipelineCPU.runs/synth_1
+# Command line: vivado.exe -log PipelineCPU.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source PipelineCPU.tcl
+# Log file: D:/Vivado/PipelineCPU/PipelineCPU.runs/synth_1/PipelineCPU.vds
+# Journal file: D:/Vivado/PipelineCPU/PipelineCPU.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source PipelineCPU.tcl -notrace
+Command: synth_design -top PipelineCPU -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 114748 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 430.719 ; gain = 99.129
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'PipelineCPU' [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/PipelineCPU.v:3]
+INFO: [Synth 8-6157] synthesizing module 'MUX' [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/MUX.v:2]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'MUX' (1#1) [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/MUX.v:2]
+INFO: [Synth 8-6157] synthesizing module 'PC' [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/PC.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (2#1) [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/PC.v:2]
+INFO: [Synth 8-6157] synthesizing module 'PCAdd4' [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/PCAdd4.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'PCAdd4' (3#1) [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/PCAdd4.v:2]
+INFO: [Synth 8-6157] synthesizing module 'InsMem' [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:2]
+CRITICAL WARNING: [Synth 8-4445] could not open $readmem data file 'file2a.txt'; please make sure the file is added to project and has read permission, ignoring [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:7]
+
+Warning: Trying to implement RAM in registers. Block RAM or DRAM implementation is not possible for one or more of the following reasons :
+	1: Unable to determine number of words or word size in RAM. 
+	2: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+WARNING: [Synth 8-3848] Net mem in module/entity InsMem does not have driver. [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:5]
+INFO: [Common 17-14] Message 'Synth 8-3848' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6155] done synthesizing module 'InsMem' (4#1) [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/InsMem.v:2]
+INFO: [Synth 8-6157] synthesizing module 'Control' [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/Control.v:2]
+	Parameter ADD bound to: 6'b100000 
+	Parameter ADDU bound to: 6'b100001 
+	Parameter SUB bound to: 6'b100010 
+	Parameter AND bound to: 6'b100100 
+	Parameter OR bound to: 6'b100101 
+	Parameter SLL bound to: 6'b000000 
+	Parameter ADDI bound to: 6'b001000 
+	Parameter ADDIU bound to: 6'b001001 
+	Parameter ANDI bound to: 6'b001100 
+	Parameter ORI bound to: 6'b001101 
+	Parameter SLTI bound to: 6'b001010 
+	Parameter BEQ bound to: 6'b000100 
+	Parameter BNE bound to: 6'b000101 
+	Parameter J bound to: 6'b000010 
+	Parameter JAL bound to: 6'b000011 
+	Parameter JR bound to: 6'b001000 
+	Parameter LW bound to: 6'b100011 
+	Parameter SW bound to: 6'b101011 
+	Parameter R bound to: 6'b000000 
+INFO: [Synth 8-6155] done synthesizing module 'Control' (5#1) [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/Control.v:2]
+INFO: [Synth 8-6157] synthesizing module 'ALUcontrol' [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/ALUcontrol.v:2]
+	Parameter ADD bound to: 4'b0010 
+	Parameter SUB bound to: 4'b0110 
+	Parameter SLT bound to: 4'b0111 
+	Parameter SLL bound to: 4'b1000 
+	Parameter sllfunct bound to: 6'b000000 
+	Parameter addfunct bound to: 6'b100000 
+	Parameter addufunct bound to: 6'b100001 
+	Parameter subfunct bound to: 6'b100010 
+	Parameter andfunct bound to: 6'b100100 
+	Parameter orfunct bound to: 6'b100101 
+	Parameter sltfunct bound to: 6'b101010 
+	Parameter JRfunct bound to: 6'b001000 
+	Parameter sltiop bound to: 6'b001010 
+INFO: [Synth 8-226] default block is never used [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/ALUcontrol.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ALUcontrol' (6#1) [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/ALUcontrol.v:2]
+INFO: [Synth 8-6157] synthesizing module 'MUX__parameterized0' [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/MUX.v:2]
+	Parameter width bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'MUX__parameterized0' (6#1) [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/MUX.v:2]
+INFO: [Synth 8-6157] synthesizing module 'SignExtend' [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/SignExtend.v:3]
+WARNING: [Synth 8-567] referenced signal 'ins16' should be on the sensitivity list [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/SignExtend.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'SignExtend' (7#1) [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/SignExtend.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Registers' [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/Registers.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Registers' (8#1) [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/Registers.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/ALU.v:2]
+	Parameter ADD bound to: 4'b0010 
+	Parameter SUB bound to: 4'b0110 
+	Parameter AND bound to: 4'b0000 
+	Parameter OR bound to: 4'b0001 
+	Parameter SLT bound to: 4'b0111 
+	Parameter SLL bound to: 4'b1000 
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (9#1) [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/ALU.v:2]
+INFO: [Synth 8-6157] synthesizing module 'DataMemory' [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/DataMemory.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'DataMemory' (10#1) [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/DataMemory.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'PipelineCPU' (11#1) [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/PipelineCPU.v:3]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port memRead
+WARNING: [Synth 8-3331] design SignExtend has unconnected port ExtSel
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 486.707 ; gain = 155.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 486.707 ; gain = 155.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 486.707 ; gain = 155.117
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "result" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[0]" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-327] inferring latch for variable 'result_reg' [D:/Vivado/PipelineCPU/PipelineCPU.srcs/sources_1/new/ALUcontrol.v:24]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 497.410 ; gain = 165.820
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   3 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 33    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 7     
+	  33 Input     32 Bit        Muxes := 2     
+	   7 Input     32 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   7 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 34    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module PipelineCPU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module MUX 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module PC 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module PCAdd4 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module ALUcontrol 
+Detailed RTL Component Info : 
++---Muxes : 
+	   7 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 1     
+Module MUX__parameterized0 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module Registers 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 32    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	  33 Input     32 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 33    
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
++---Muxes : 
+	   7 Input     32 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design InsMem has unconnected port pc[31]
+WARNING: [Synth 8-3331] design InsMem has unconnected port pc[30]
+WARNING: [Synth 8-3331] design InsMem has unconnected port pc[29]
+WARNING: [Synth 8-3331] design InsMem has unconnected port pc[28]
+WARNING: [Synth 8-3331] design InsMem has unconnected port pc[27]
+WARNING: [Synth 8-3331] design InsMem has unconnected port pc[26]
+WARNING: [Synth 8-3331] design InsMem has unconnected port pc[25]
+WARNING: [Synth 8-3331] design InsMem has unconnected port pc[24]
+WARNING: [Synth 8-3331] design InsMem has unconnected port pc[23]
+WARNING: [Synth 8-3331] design InsMem has unconnected port pc[22]
+WARNING: [Synth 8-3331] design InsMem has unconnected port pc[21]
+WARNING: [Synth 8-3331] design InsMem has unconnected port pc[20]
+WARNING: [Synth 8-3331] design InsMem has unconnected port pc[19]
+WARNING: [Synth 8-3331] design InsMem has unconnected port pc[18]
+WARNING: [Synth 8-3331] design InsMem has unconnected port pc[17]
+WARNING: [Synth 8-3331] design InsMem has unconnected port pc[16]
+WARNING: [Synth 8-3331] design InsMem has unconnected port pc[15]
+WARNING: [Synth 8-3331] design InsMem has unconnected port pc[14]
+WARNING: [Synth 8-3331] design InsMem has unconnected port pc[13]
+WARNING: [Synth 8-3331] design InsMem has unconnected port pc[12]
+WARNING: [Synth 8-3331] design InsMem has unconnected port pc[11]
+WARNING: [Synth 8-3331] design InsMem has unconnected port pc[10]
+WARNING: [Synth 8-3331] design InsMem has unconnected port pc[1]
+WARNING: [Synth 8-3331] design InsMem has unconnected port pc[0]
+INFO: [Synth 8-3886] merging instance 'regs/register_reg[31][8]' (FDE) to 'regs/register_reg[31][9]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[15][8]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[23][8]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[7][8]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[27][8]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[11][8]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[19][8]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[3][8]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[29][8]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[13][8]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[21][8]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[5][8]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[25][8]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[9][8]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[17][8]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[1][8]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[30][8]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[14][8]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[22][8]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[6][8]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[26][8]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[10][8]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[18][8]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[2][8]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[28][8]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[12][8]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[20][8]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[4][8]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[24][8]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[8][8]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[16][8]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'regs/register_reg[31][9]' (FDE) to 'regs/register_reg[31][10]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[15][9]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[23][9]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[7][9]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[27][9]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[11][9]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[19][9]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[3][9]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[29][9]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[13][9]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[21][9]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[5][9]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[25][9]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[9][9]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[17][9]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[1][9]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[30][9]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[14][9]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[22][9]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[6][9]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[26][9]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[10][9]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[18][9]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[2][9]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[28][9]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[12][9]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[20][9]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[4][9]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[24][9]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[8][9]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[16][9]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'regs/register_reg[31][10]' (FDE) to 'regs/register_reg[31][11]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[15][10]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[23][10]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[7][10]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[27][10]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[11][10]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[19][10]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[3][10]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[29][10]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[13][10]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[21][10]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[5][10]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[25][10]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[9][10]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[17][10]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[1][10]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[30][10]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[14][10]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[22][10]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[6][10]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[26][10]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[10][10]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[18][10]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[2][10]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[28][10]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[12][10]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[20][10]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[4][10]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[24][10]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[8][10]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[16][10]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'regs/register_reg[31][11]' (FDE) to 'regs/register_reg[31][12]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[15][11]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[23][11]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[7][11]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[27][11]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[11][11]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/regs/register_reg[19][11]' (FDE) to 'i_0/regs/register_reg[1][31]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\regs/register_reg[31][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\regs/register_reg[16][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\regs/register_reg[31][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\regs/register_reg[16][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\aluc/result_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\aluc/result_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\aluc/result_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\aluc/result_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\uPC/pc_reg[0] )
+WARNING: [Synth 8-3332] Sequential element (aluc/result_reg[3]) is unused and will be removed from module PipelineCPU.
+WARNING: [Synth 8-3332] Sequential element (aluc/result_reg[2]) is unused and will be removed from module PipelineCPU.
+WARNING: [Synth 8-3332] Sequential element (aluc/result_reg[1]) is unused and will be removed from module PipelineCPU.
+WARNING: [Synth 8-3332] Sequential element (aluc/result_reg[0]) is unused and will be removed from module PipelineCPU.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 626.562 ; gain = 294.973
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 626.562 ; gain = 294.973
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 626.586 ; gain = 294.996
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 626.586 ; gain = 294.996
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 626.586 ; gain = 294.996
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 626.586 ; gain = 294.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 626.586 ; gain = 294.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 626.586 ; gain = 294.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 626.586 ; gain = 294.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     2|
+|3     |LUT1   |     1|
+|4     |FDRE   |     7|
+|5     |IBUF   |     1|
+|6     |OBUF   |    16|
++------+-------+------+
+
+Report Instance Areas: 
++------+----------+-------+------+
+|      |Instance  |Module |Cells |
++------+----------+-------+------+
+|1     |top       |       |    28|
+|2     |  uPC     |PC     |     7|
+|3     |  uPCAdd4 |PCAdd4 |     3|
++------+----------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 626.586 ; gain = 294.996
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 1 critical warnings and 288 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 626.586 ; gain = 294.996
+Synthesis Optimization Complete : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 626.586 ; gain = 294.996
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 726.621 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+178 Infos, 132 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 726.621 ; gain = 408.062
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 726.621 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/Vivado/PipelineCPU/PipelineCPU.runs/synth_1/PipelineCPU.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file PipelineCPU_utilization_synth.rpt -pb PipelineCPU_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 29 20:49:01 2022...

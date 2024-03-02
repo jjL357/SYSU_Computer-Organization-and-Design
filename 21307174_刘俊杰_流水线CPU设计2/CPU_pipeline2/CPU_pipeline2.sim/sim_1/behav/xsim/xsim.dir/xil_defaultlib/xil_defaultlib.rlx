@@ -1,0 +1,25 @@
+0.6
+2018.1
+Apr  4 2018
+19:30:32
+D:/CPU_pipeline2/CPU_pipeline2.sim/sim_1/behav/xsim/glbl.v,1522801934,verilog,,,,glbl,,,,,,,,
+D:/CPU_pipeline2/CPU_pipeline2.srcs/sim_1/new/CPU_sim.v,1669867747,verilog,,,,CPU_sim,,,,,,,,
+D:/CPU_pipeline2/CPU_pipeline2.srcs/sources_1/new/ALU.v,1669964850,verilog,,D:/CPU_pipeline2/CPU_pipeline2.srcs/sources_1/new/ALUControl.v,,ALU,,,,,,,,
+D:/CPU_pipeline2/CPU_pipeline2.srcs/sources_1/new/ALUControl.v,1669867747,verilog,,D:/CPU_pipeline2/CPU_pipeline2.srcs/sources_1/new/Adder.v,,ALUControl,,,,,,,,
+D:/CPU_pipeline2/CPU_pipeline2.srcs/sources_1/new/Adder.v,1669867747,verilog,,D:/CPU_pipeline2/CPU_pipeline2.srcs/sources_1/new/CPU.v,,Adder,,,,,,,,
+D:/CPU_pipeline2/CPU_pipeline2.srcs/sources_1/new/CPU.v,1670035120,verilog,,D:/CPU_pipeline2/CPU_pipeline2.srcs/sources_1/new/Control.v,,CPU,,,,,,,,
+D:/CPU_pipeline2/CPU_pipeline2.srcs/sources_1/new/Control.v,1669991890,verilog,,D:/CPU_pipeline2/CPU_pipeline2.srcs/sources_1/new/DataMem.v,,Control,,,,,,,,
+D:/CPU_pipeline2/CPU_pipeline2.srcs/sources_1/new/DataMem.v,1669993240,verilog,,D:/CPU_pipeline2/CPU_pipeline2.srcs/sources_1/new/EXMEM_Registers.v,,DataMem,,,,,,,,
+D:/CPU_pipeline2/CPU_pipeline2.srcs/sources_1/new/EXMEM_Registers.v,1670002498,verilog,,D:/CPU_pipeline2/CPU_pipeline2.srcs/sources_1/new/ForwardingUnit.v,,EXMEM_Registers,,,,,,,,
+D:/CPU_pipeline2/CPU_pipeline2.srcs/sources_1/new/ForwardingUnit.v,1670035287,verilog,,D:/CPU_pipeline2/CPU_pipeline2.srcs/sources_1/new/ForwardingUnit1.v,,ForwardingUnit,,,,,,,,
+D:/CPU_pipeline2/CPU_pipeline2.srcs/sources_1/new/ForwardingUnit1.v,1670128713,verilog,,D:/CPU_pipeline2/CPU_pipeline2.srcs/sources_1/new/ForwordingUnit2.v,,ForwardingUnit1,,,,,,,,
+D:/CPU_pipeline2/CPU_pipeline2.srcs/sources_1/new/ForwordingUnit2.v,1669984483,verilog,,D:/CPU_pipeline2/CPU_pipeline2.srcs/sources_1/new/HazardDetectUnit.v,,ForwordingUnit2,,,,,,,,
+D:/CPU_pipeline2/CPU_pipeline2.srcs/sources_1/new/HazardDetectUnit.v,1669990794,verilog,,D:/CPU_pipeline2/CPU_pipeline2.srcs/sources_1/new/IDEX_Registers.v,,HazardDetectUnit,,,,,,,,
+D:/CPU_pipeline2/CPU_pipeline2.srcs/sources_1/new/IDEX_Registers.v,1670002432,verilog,,D:/CPU_pipeline2/CPU_pipeline2.srcs/sources_1/new/IFID_Registers.v,,IDEX_Registers,,,,,,,,
+D:/CPU_pipeline2/CPU_pipeline2.srcs/sources_1/new/IFID_Registers.v,1669965078,verilog,,D:/CPU_pipeline2/CPU_pipeline2.srcs/sources_1/new/InsMem.v,,IFID_Registers,,,,,,,,
+D:/CPU_pipeline2/CPU_pipeline2.srcs/sources_1/new/InsMem.v,1669988553,verilog,,D:/CPU_pipeline2/CPU_pipeline2.srcs/sources_1/new/MEMWB_Regisers.v,,InsMem,,,,,,,,
+D:/CPU_pipeline2/CPU_pipeline2.srcs/sources_1/new/MEMWB_Regisers.v,1669867747,verilog,,D:/CPU_pipeline2/CPU_pipeline2.srcs/sources_1/new/Mulx.v,,MEMWB_Registers,,,,,,,,
+D:/CPU_pipeline2/CPU_pipeline2.srcs/sources_1/new/Mulx.v,1669867747,verilog,,D:/CPU_pipeline2/CPU_pipeline2.srcs/sources_1/new/PC.v,,Mulx,,,,,,,,
+D:/CPU_pipeline2/CPU_pipeline2.srcs/sources_1/new/PC.v,1670037139,verilog,,D:/CPU_pipeline2/CPU_pipeline2.srcs/sources_1/new/PCAdder4.v,,PC,,,,,,,,
+D:/CPU_pipeline2/CPU_pipeline2.srcs/sources_1/new/PCAdder4.v,1669867747,verilog,,D:/CPU_pipeline2/CPU_pipeline2.srcs/sources_1/new/Registers.v,,PCAdder4,,,,,,,,
+D:/CPU_pipeline2/CPU_pipeline2.srcs/sources_1/new/Registers.v,1670001150,verilog,,D:/CPU_pipeline2/CPU_pipeline2.srcs/sim_1/new/CPU_sim.v,,Registers,,,,,,,,

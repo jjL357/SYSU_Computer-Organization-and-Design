@@ -1,0 +1,24 @@
+0.6
+2018.1
+Apr  4 2018
+19:30:32
+D:/project_5/project_5.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+D:/project_5/project_5.srcs/sim_1/new/PipelineCPU_sim.v,1671079702,verilog,,,,PipelineCPU_sim,,,,,,,,
+D:/project_5/project_5.srcs/sources_1/new/ALU.v,1670414644,verilog,,D:/project_5/project_5.srcs/sources_1/new/ALUcontrol.v,,ALU,,,,,,,,
+D:/project_5/project_5.srcs/sources_1/new/ALUcontrol.v,1670328995,verilog,,D:/project_5/project_5.srcs/sources_1/new/Control.v,,ALUcontrol,,,,,,,,
+D:/project_5/project_5.srcs/sources_1/new/Control.v,1669724606,verilog,,D:/project_5/project_5.srcs/sources_1/new/DataMemory.v,,Control,,,,,,,,
+D:/project_5/project_5.srcs/sources_1/new/DataMemory.v,1671036172,verilog,,D:/project_5/project_5.srcs/sources_1/new/ExMemRegister.v,,DataMemory,,,,,,,,
+D:/project_5/project_5.srcs/sources_1/new/ExMemRegister.v,1670417494,verilog,,D:/project_5/project_5.srcs/sources_1/new/ForwardUnit.v,,ExMemRegister,,,,,,,,
+D:/project_5/project_5.srcs/sources_1/new/ForwardUnit.v,1671090784,verilog,,D:/project_5/project_5.srcs/sources_1/new/ForwardUnit2.v,,ForwardUnit,,,,,,,,
+D:/project_5/project_5.srcs/sources_1/new/ForwardUnit2.v,1671094389,verilog,,D:/project_5/project_5.srcs/sources_1/new/IDEXRegister.v,,ForwardUnit2,,,,,,,,
+D:/project_5/project_5.srcs/sources_1/new/IDEXRegister.v,1670491387,verilog,,D:/project_5/project_5.srcs/sources_1/new/IFIDRegister.v,,IDEXRegister,,,,,,,,
+D:/project_5/project_5.srcs/sources_1/new/IFIDRegister.v,1670421869,verilog,,D:/project_5/project_5.srcs/sources_1/new/InsMem.v,,IFIDRegister,,,,,,,,
+D:/project_5/project_5.srcs/sources_1/new/InsMem.v,1671087274,verilog,,D:/project_5/project_5.srcs/sources_1/new/MEMWBRegister.v,,InsMem,,,,,,,,
+D:/project_5/project_5.srcs/sources_1/new/MEMWBRegister.v,1670417494,verilog,,D:/project_5/project_5.srcs/sources_1/new/MUX.v,,MEMWBRegister,,,,,,,,
+D:/project_5/project_5.srcs/sources_1/new/MUX.v,1669723620,verilog,,D:/project_5/project_5.srcs/sources_1/new/MUX3to1.v,,MUX,,,,,,,,
+D:/project_5/project_5.srcs/sources_1/new/MUX3to1.v,1670493286,verilog,,D:/project_5/project_5.srcs/sources_1/new/PC.v,,MUX3to1,,,,,,,,
+D:/project_5/project_5.srcs/sources_1/new/PC.v,1669723708,verilog,,D:/project_5/project_5.srcs/sources_1/new/PCAdd4.v,,PC,,,,,,,,
+D:/project_5/project_5.srcs/sources_1/new/PCAdd4.v,1669723757,verilog,,D:/project_5/project_5.srcs/sources_1/new/PipelineCPU.v,,PCAdd4,,,,,,,,
+D:/project_5/project_5.srcs/sources_1/new/PipelineCPU.v,1671093201,verilog,,D:/project_5/project_5.srcs/sources_1/new/Registers.v,,PipelineCPU,,,,,,,,
+D:/project_5/project_5.srcs/sources_1/new/Registers.v,1671089664,verilog,,D:/project_5/project_5.srcs/sources_1/new/SignExtend.v,,Registers,,,,,,,,
+D:/project_5/project_5.srcs/sources_1/new/SignExtend.v,1671088695,verilog,,D:/project_5/project_5.srcs/sim_1/new/PipelineCPU_sim.v,,SignExtend,,,,,,,,

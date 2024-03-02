@@ -1,0 +1,22 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_single_circle2/CPU_single_circle2.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_single_circle2/CPU_single_circle2.srcs/sources_1/new/ALUControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUControl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_single_circle2/CPU_single_circle2.srcs/sources_1/new/CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_single_circle2/CPU_single_circle2.srcs/sources_1/new/Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_single_circle2/CPU_single_circle2.srcs/sources_1/new/DataMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_single_circle2/CPU_single_circle2.srcs/sources_1/new/InsMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InsMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_single_circle2/CPU_single_circle2.srcs/sources_1/new/Mulx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mulx
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_single_circle2/CPU_single_circle2.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_single_circle2/CPU_single_circle2.srcs/sources_1/new/PCAdd4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCAdd4
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_single_circle2/CPU_single_circle2.srcs/sources_1/new/Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_single_circle2/CPU_single_circle2.srcs/sim_1/new/CPU_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_sim

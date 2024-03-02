@@ -1,0 +1,21 @@
+0.6
+2018.1
+Apr  4 2018
+19:30:32
+D:/CPU_pipeline1/CPU_pipeline1.sim/sim_1/behav/xsim/glbl.v,1522801934,verilog,,,,glbl,,,,,,,,
+D:/CPU_pipeline1/CPU_pipeline1.srcs/sim_1/new/CPU_sim.v,1669731406,verilog,,,,CPU_sim,,,,,,,,
+D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/ALU.v,1669810916,verilog,,D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/ALUControl.v,,ALU,,,,,,,,
+D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/ALUControl.v,1669730860,verilog,,D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/CPU.v,,ALUControl,,,,,,,,
+D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/Adder.v,1669382378,verilog,,D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/CPU.v,,Adder,,,,,,,,
+D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/CPU.v,1669813166,verilog,,D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/Control.v,,CPU,,,,,,,,
+D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/Control.v,1669382379,verilog,,D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/DataMem.v,,Control,,,,,,,,
+D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/DataMem.v,1669811988,verilog,,D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/EXMEM_Registers.v,,DataMem,,,,,,,,
+D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/EXMEM_Registers.v,1669811209,verilog,,D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/IDEX_Registers.v,,EXMEM_Registers,,,,,,,,
+D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/IDEX_Registers.v,1669811016,verilog,,D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/IFID_Registers.v,,IDEX_Registers,,,,,,,,
+D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/IFID_Registers.v,1669798991,verilog,,D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/InsMem.v,,IFID_Registers,,,,,,,,
+D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/InsMem.v,1669797409,verilog,,D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/MEMWB_Registers.v,,InsMem,,,,,,,,
+D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/MEMWB_Registers.v,1669725829,verilog,,D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/Mulx.v,,MEMWB_Registers,,,,,,,,
+D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/Mulx.v,1669382378,verilog,,D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/PC.v,,Mulx,,,,,,,,
+D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/PC.v,1669794938,verilog,,D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/PCAdder4.v,,PC,,,,,,,,
+D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/PCAdder4.v,1669382235,verilog,,D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/Registers.v,,PCAdder4,,,,,,,,
+D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/Registers.v,1669709085,verilog,,D:/CPU_pipeline1/CPU_pipeline1.srcs/sim_1/new/CPU_sim.v,,Registers,,,,,,,,

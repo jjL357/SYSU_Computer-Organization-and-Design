@@ -1,0 +1,1634 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Wed Nov 30 16:04:06 2022
+# Process ID: 2088
+# Current directory: D:/CPU_pipeline1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7856 D:\CPU_pipeline1\CPU_pipeline1.xpr
+# Log file: D:/CPU_pipeline1/vivado.log
+# Journal file: D:/CPU_pipeline1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/CPU_pipeline1/CPU_pipeline1.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2018.1/data/ip'.
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 867.043 ; gain = 104.520
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/CPU_pipeline1/CPU_pipeline1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/CPU_pipeline1/CPU_pipeline1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CPU_sim_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/CPU_pipeline1/CPU_pipeline1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto 6202665dbceb478ca157a7172d1013b7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_sim_behav xil_defaultlib.CPU_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 5 differs from formal bit length 32 for port ifid_rs [D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/CPU.v:73]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 16 for port ins [D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/CPU.v:79]
+WARNING: [VRFC 10-278] actual bit length 48 differs from formal bit length 32 for port A [D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/CPU.v:80]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/CPU_pipeline1/CPU_pipeline1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CPU_sim_behav -key {Behavioral:sim_1:Functional:CPU_sim} -tclbatch {CPU_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+source CPU_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: File file2a.txt referenced on D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/InsMem.v at line 8 cannot be opened for reading. Please ensure that this file is available in the current working directory.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 898.203 ; gain = 6.387
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/CPU_pipeline1/CPU_pipeline1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/CPU_pipeline1/CPU_pipeline1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CPU_sim_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/CPU_pipeline1/CPU_pipeline1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto 6202665dbceb478ca157a7172d1013b7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_sim_behav xil_defaultlib.CPU_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 5 differs from formal bit length 32 for port ifid_rs [D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/CPU.v:73]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 16 for port ins [D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/CPU.v:79]
+WARNING: [VRFC 10-278] actual bit length 48 differs from formal bit length 32 for port A [D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/CPU.v:80]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/CPU_pipeline1/CPU_pipeline1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CPU_sim_behav -key {Behavioral:sim_1:Functional:CPU_sim} -tclbatch {CPU_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+source CPU_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 919.863 ; gain = 8.070
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/CPU_pipeline1/CPU_pipeline1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/CPU_pipeline1/CPU_pipeline1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CPU_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2458] undeclared symbol zero, assumed default net type wire [D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/ALU.v:28]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/ALUControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUControl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/Adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/DataMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/EXMEM_Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXMEM_Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/IDEX_Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IDEX_Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/IFID_Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IFID_Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/InsMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InsMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/MEMWB_Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEMWB_Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/Mulx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mulx
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/PCAdder4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCAdder4
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sim_1/new/CPU_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_sim
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/CPU_pipeline1/CPU_pipeline1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto 6202665dbceb478ca157a7172d1013b7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_sim_behav xil_defaultlib.CPU_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 5 differs from formal bit length 32 for port ifid_rs [D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/CPU.v:73]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 16 for port ins [D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/CPU.v:79]
+WARNING: [VRFC 10-278] actual bit length 48 differs from formal bit length 32 for port A [D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/CPU.v:80]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Adder
+Compiling module xil_defaultlib.Mulx
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.PCAdder4
+Compiling module xil_defaultlib.IFID_Registers
+Compiling module xil_defaultlib.InsMem
+Compiling module xil_defaultlib.Control
+Compiling module xil_defaultlib.ALUControl
+Compiling module xil_defaultlib.Registers
+Compiling module xil_defaultlib.IDEX_Registers
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.Mulx(width=1)
+Compiling module xil_defaultlib.EXMEM_Registers
+Compiling module xil_defaultlib.DataMem
+Compiling module xil_defaultlib.MEMWB_Registers
+Compiling module xil_defaultlib.CPU
+Compiling module xil_defaultlib.CPU_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot CPU_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/CPU_pipeline1/CPU_pipeline1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CPU_sim_behav -key {Behavioral:sim_1:Functional:CPU_sim} -tclbatch {CPU_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+source CPU_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 921.578 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/CPU_pipeline1/CPU_pipeline1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/CPU_pipeline1/CPU_pipeline1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CPU_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2458] undeclared symbol zero, assumed default net type wire [D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/ALU.v:28]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/ALUControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUControl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/Adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/DataMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/EXMEM_Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXMEM_Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/IDEX_Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IDEX_Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/IFID_Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IFID_Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/InsMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InsMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/MEMWB_Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEMWB_Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/Mulx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mulx
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/PCAdder4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCAdder4
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sim_1/new/CPU_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_sim
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/CPU_pipeline1/CPU_pipeline1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto 6202665dbceb478ca157a7172d1013b7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_sim_behav xil_defaultlib.CPU_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 5 differs from formal bit length 32 for port ifid_rs [D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/CPU.v:73]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 16 for port ins [D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/CPU.v:79]
+WARNING: [VRFC 10-278] actual bit length 48 differs from formal bit length 32 for port A [D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/CPU.v:80]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Adder
+Compiling module xil_defaultlib.Mulx
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.PCAdder4
+Compiling module xil_defaultlib.IFID_Registers
+Compiling module xil_defaultlib.InsMem
+Compiling module xil_defaultlib.Control
+Compiling module xil_defaultlib.ALUControl
+Compiling module xil_defaultlib.Registers
+Compiling module xil_defaultlib.IDEX_Registers
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.Mulx(width=1)
+Compiling module xil_defaultlib.EXMEM_Registers
+Compiling module xil_defaultlib.DataMem
+Compiling module xil_defaultlib.MEMWB_Registers
+Compiling module xil_defaultlib.CPU
+Compiling module xil_defaultlib.CPU_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot CPU_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/CPU_pipeline1/CPU_pipeline1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CPU_sim_behav -key {Behavioral:sim_1:Functional:CPU_sim} -tclbatch {CPU_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+source CPU_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 930.414 ; gain = 3.211
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/CPU_pipeline1/CPU_pipeline1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/CPU_pipeline1/CPU_pipeline1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CPU_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2458] undeclared symbol zero, assumed default net type wire [D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/ALU.v:28]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/ALUControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUControl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/Adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/DataMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/EXMEM_Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXMEM_Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/IDEX_Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IDEX_Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/IFID_Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IFID_Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/InsMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InsMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/MEMWB_Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEMWB_Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/Mulx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mulx
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/PCAdder4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCAdder4
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sim_1/new/CPU_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_sim
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/CPU_pipeline1/CPU_pipeline1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto 6202665dbceb478ca157a7172d1013b7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_sim_behav xil_defaultlib.CPU_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 5 differs from formal bit length 32 for port ifid_rs [D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/CPU.v:73]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 16 for port ins [D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/CPU.v:79]
+WARNING: [VRFC 10-278] actual bit length 48 differs from formal bit length 32 for port A [D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/CPU.v:80]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Adder
+Compiling module xil_defaultlib.Mulx
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.PCAdder4
+Compiling module xil_defaultlib.IFID_Registers
+Compiling module xil_defaultlib.InsMem
+Compiling module xil_defaultlib.Control
+Compiling module xil_defaultlib.ALUControl
+Compiling module xil_defaultlib.Registers
+Compiling module xil_defaultlib.IDEX_Registers
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.Mulx(width=1)
+Compiling module xil_defaultlib.EXMEM_Registers
+Compiling module xil_defaultlib.DataMem
+Compiling module xil_defaultlib.MEMWB_Registers
+Compiling module xil_defaultlib.CPU
+Compiling module xil_defaultlib.CPU_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot CPU_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/CPU_pipeline1/CPU_pipeline1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CPU_sim_behav -key {Behavioral:sim_1:Functional:CPU_sim} -tclbatch {CPU_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+source CPU_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 934.445 ; gain = 1.195
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/CPU_pipeline1/CPU_pipeline1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/CPU_pipeline1/CPU_pipeline1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CPU_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2458] undeclared symbol zero, assumed default net type wire [D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/ALU.v:28]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/ALUControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUControl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/Adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/DataMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/EXMEM_Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXMEM_Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/IDEX_Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IDEX_Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/IFID_Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IFID_Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/InsMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InsMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/MEMWB_Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEMWB_Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/Mulx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mulx
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/PCAdder4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCAdder4
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sim_1/new/CPU_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_sim
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/CPU_pipeline1/CPU_pipeline1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto 6202665dbceb478ca157a7172d1013b7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_sim_behav xil_defaultlib.CPU_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 5 differs from formal bit length 32 for port ifid_rs [D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/CPU.v:73]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 16 for port ins [D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/CPU.v:79]
+WARNING: [VRFC 10-278] actual bit length 48 differs from formal bit length 32 for port A [D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/CPU.v:80]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Adder
+Compiling module xil_defaultlib.Mulx
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.PCAdder4
+Compiling module xil_defaultlib.IFID_Registers
+Compiling module xil_defaultlib.InsMem
+Compiling module xil_defaultlib.Control
+Compiling module xil_defaultlib.ALUControl
+Compiling module xil_defaultlib.Registers
+Compiling module xil_defaultlib.IDEX_Registers
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.Mulx(width=1)
+Compiling module xil_defaultlib.EXMEM_Registers
+Compiling module xil_defaultlib.DataMem
+Compiling module xil_defaultlib.MEMWB_Registers
+Compiling module xil_defaultlib.CPU
+Compiling module xil_defaultlib.CPU_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot CPU_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/CPU_pipeline1/CPU_pipeline1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CPU_sim_behav -key {Behavioral:sim_1:Functional:CPU_sim} -tclbatch {CPU_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+source CPU_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 934.809 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/CPU_pipeline1/CPU_pipeline1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/CPU_pipeline1/CPU_pipeline1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CPU_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2458] undeclared symbol zero, assumed default net type wire [D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/ALU.v:28]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/ALUControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUControl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/Adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/DataMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/EXMEM_Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXMEM_Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/IDEX_Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IDEX_Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/IFID_Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IFID_Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/InsMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InsMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/MEMWB_Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEMWB_Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/Mulx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mulx
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/PCAdder4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCAdder4
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sim_1/new/CPU_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_sim
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/CPU_pipeline1/CPU_pipeline1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto 6202665dbceb478ca157a7172d1013b7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_sim_behav xil_defaultlib.CPU_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 5 differs from formal bit length 32 for port ifid_rs [D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/CPU.v:73]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 16 for port ins [D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/CPU.v:79]
+WARNING: [VRFC 10-278] actual bit length 48 differs from formal bit length 32 for port A [D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/CPU.v:80]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Adder
+Compiling module xil_defaultlib.Mulx
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.PCAdder4
+Compiling module xil_defaultlib.IFID_Registers
+Compiling module xil_defaultlib.InsMem
+Compiling module xil_defaultlib.Control
+Compiling module xil_defaultlib.ALUControl
+Compiling module xil_defaultlib.Registers
+Compiling module xil_defaultlib.IDEX_Registers
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.Mulx(width=1)
+Compiling module xil_defaultlib.EXMEM_Registers
+Compiling module xil_defaultlib.DataMem
+Compiling module xil_defaultlib.MEMWB_Registers
+Compiling module xil_defaultlib.CPU
+Compiling module xil_defaultlib.CPU_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot CPU_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/CPU_pipeline1/CPU_pipeline1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CPU_sim_behav -key {Behavioral:sim_1:Functional:CPU_sim} -tclbatch {CPU_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+source CPU_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 937.754 ; gain = 1.301
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/CPU_pipeline1/CPU_pipeline1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/CPU_pipeline1/CPU_pipeline1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CPU_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2458] undeclared symbol zero, assumed default net type wire [D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/ALU.v:28]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/ALUControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUControl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/Adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/DataMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/EXMEM_Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXMEM_Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/IDEX_Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IDEX_Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/IFID_Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IFID_Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/InsMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InsMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/MEMWB_Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEMWB_Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/Mulx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mulx
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/PCAdder4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCAdder4
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sim_1/new/CPU_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_sim
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/CPU_pipeline1/CPU_pipeline1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto 6202665dbceb478ca157a7172d1013b7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_sim_behav xil_defaultlib.CPU_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 5 differs from formal bit length 32 for port ifid_rs [D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/CPU.v:73]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 16 for port ins [D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/CPU.v:79]
+WARNING: [VRFC 10-278] actual bit length 48 differs from formal bit length 32 for port A [D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/CPU.v:80]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Adder
+Compiling module xil_defaultlib.Mulx
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.PCAdder4
+Compiling module xil_defaultlib.IFID_Registers
+Compiling module xil_defaultlib.InsMem
+Compiling module xil_defaultlib.Control
+Compiling module xil_defaultlib.ALUControl
+Compiling module xil_defaultlib.Registers
+Compiling module xil_defaultlib.IDEX_Registers
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.Mulx(width=1)
+Compiling module xil_defaultlib.EXMEM_Registers
+Compiling module xil_defaultlib.DataMem
+Compiling module xil_defaultlib.MEMWB_Registers
+Compiling module xil_defaultlib.CPU
+Compiling module xil_defaultlib.CPU_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot CPU_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/CPU_pipeline1/CPU_pipeline1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CPU_sim_behav -key {Behavioral:sim_1:Functional:CPU_sim} -tclbatch {CPU_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+source CPU_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 942.914 ; gain = 0.559
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/CPU_pipeline1/CPU_pipeline1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/CPU_pipeline1/CPU_pipeline1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CPU_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2458] undeclared symbol zero, assumed default net type wire [D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/ALU.v:28]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/ALUControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUControl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/Adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/DataMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/EXMEM_Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXMEM_Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/IDEX_Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IDEX_Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/IFID_Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IFID_Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/InsMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InsMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/MEMWB_Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEMWB_Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/Mulx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mulx
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/PCAdder4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCAdder4
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sim_1/new/CPU_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_sim
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/CPU_pipeline1/CPU_pipeline1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto 6202665dbceb478ca157a7172d1013b7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_sim_behav xil_defaultlib.CPU_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 5 differs from formal bit length 32 for port ifid_rs [D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/CPU.v:73]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 16 for port ins [D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/CPU.v:79]
+WARNING: [VRFC 10-278] actual bit length 48 differs from formal bit length 32 for port A [D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/CPU.v:80]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Adder
+Compiling module xil_defaultlib.Mulx
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.PCAdder4
+Compiling module xil_defaultlib.IFID_Registers
+Compiling module xil_defaultlib.InsMem
+Compiling module xil_defaultlib.Control
+Compiling module xil_defaultlib.ALUControl
+Compiling module xil_defaultlib.Registers
+Compiling module xil_defaultlib.IDEX_Registers
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.Mulx(width=1)
+Compiling module xil_defaultlib.EXMEM_Registers
+Compiling module xil_defaultlib.DataMem
+Compiling module xil_defaultlib.MEMWB_Registers
+Compiling module xil_defaultlib.CPU
+Compiling module xil_defaultlib.CPU_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot CPU_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/CPU_pipeline1/CPU_pipeline1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CPU_sim_behav -key {Behavioral:sim_1:Functional:CPU_sim} -tclbatch {CPU_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+source CPU_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 946.086 ; gain = 2.207
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/CPU_pipeline1/CPU_pipeline1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/CPU_pipeline1/CPU_pipeline1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CPU_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2458] undeclared symbol zero, assumed default net type wire [D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/ALU.v:28]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/ALUControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUControl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/Adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/DataMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/EXMEM_Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXMEM_Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/IDEX_Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IDEX_Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/IFID_Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IFID_Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/InsMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InsMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/MEMWB_Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEMWB_Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/Mulx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mulx
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/PCAdder4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCAdder4
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sim_1/new/CPU_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_sim
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/CPU_pipeline1/CPU_pipeline1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto 6202665dbceb478ca157a7172d1013b7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_sim_behav xil_defaultlib.CPU_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 5 differs from formal bit length 32 for port ifid_rs [D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/CPU.v:73]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 16 for port ins [D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/CPU.v:79]
+WARNING: [VRFC 10-278] actual bit length 48 differs from formal bit length 32 for port A [D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/CPU.v:80]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Adder
+Compiling module xil_defaultlib.Mulx
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.PCAdder4
+Compiling module xil_defaultlib.IFID_Registers
+Compiling module xil_defaultlib.InsMem
+Compiling module xil_defaultlib.Control
+Compiling module xil_defaultlib.ALUControl
+Compiling module xil_defaultlib.Registers
+Compiling module xil_defaultlib.IDEX_Registers
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.Mulx(width=1)
+Compiling module xil_defaultlib.EXMEM_Registers
+Compiling module xil_defaultlib.DataMem
+Compiling module xil_defaultlib.MEMWB_Registers
+Compiling module xil_defaultlib.CPU
+Compiling module xil_defaultlib.CPU_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot CPU_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/CPU_pipeline1/CPU_pipeline1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CPU_sim_behav -key {Behavioral:sim_1:Functional:CPU_sim} -tclbatch {CPU_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+source CPU_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 949.570 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/CPU_pipeline1/CPU_pipeline1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/CPU_pipeline1/CPU_pipeline1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CPU_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2458] undeclared symbol zero, assumed default net type wire [D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/ALU.v:28]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/ALUControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUControl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/Adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/DataMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/EXMEM_Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXMEM_Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/IDEX_Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IDEX_Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/IFID_Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IFID_Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/InsMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InsMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/MEMWB_Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEMWB_Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/Mulx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mulx
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/PCAdder4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCAdder4
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sim_1/new/CPU_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_sim
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/CPU_pipeline1/CPU_pipeline1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto 6202665dbceb478ca157a7172d1013b7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_sim_behav xil_defaultlib.CPU_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 5 differs from formal bit length 32 for port ifid_rs [D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/CPU.v:73]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 16 for port ins [D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/CPU.v:79]
+WARNING: [VRFC 10-278] actual bit length 48 differs from formal bit length 32 for port A [D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/CPU.v:80]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Adder
+Compiling module xil_defaultlib.Mulx
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.PCAdder4
+Compiling module xil_defaultlib.IFID_Registers
+Compiling module xil_defaultlib.InsMem
+Compiling module xil_defaultlib.Control
+Compiling module xil_defaultlib.ALUControl
+Compiling module xil_defaultlib.Registers
+Compiling module xil_defaultlib.IDEX_Registers
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.Mulx(width=1)
+Compiling module xil_defaultlib.EXMEM_Registers
+Compiling module xil_defaultlib.DataMem
+Compiling module xil_defaultlib.MEMWB_Registers
+Compiling module xil_defaultlib.CPU
+Compiling module xil_defaultlib.CPU_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot CPU_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/CPU_pipeline1/CPU_pipeline1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CPU_sim_behav -key {Behavioral:sim_1:Functional:CPU_sim} -tclbatch {CPU_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+source CPU_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 949.570 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/CPU_pipeline1/CPU_pipeline1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/CPU_pipeline1/CPU_pipeline1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CPU_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2458] undeclared symbol zero, assumed default net type wire [D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/ALU.v:28]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/ALUControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUControl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/Adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/DataMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/EXMEM_Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXMEM_Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/IDEX_Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IDEX_Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/IFID_Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IFID_Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/InsMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InsMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/MEMWB_Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEMWB_Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/Mulx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mulx
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/PCAdder4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCAdder4
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sim_1/new/CPU_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_sim
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/CPU_pipeline1/CPU_pipeline1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto 6202665dbceb478ca157a7172d1013b7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_sim_behav xil_defaultlib.CPU_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 5 differs from formal bit length 32 for port ifid_rs [D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/CPU.v:73]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 16 for port ins [D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/CPU.v:79]
+WARNING: [VRFC 10-278] actual bit length 48 differs from formal bit length 32 for port A [D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/CPU.v:80]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Adder
+Compiling module xil_defaultlib.Mulx
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.PCAdder4
+Compiling module xil_defaultlib.IFID_Registers
+Compiling module xil_defaultlib.InsMem
+Compiling module xil_defaultlib.Control
+Compiling module xil_defaultlib.ALUControl
+Compiling module xil_defaultlib.Registers
+Compiling module xil_defaultlib.IDEX_Registers
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.Mulx(width=1)
+Compiling module xil_defaultlib.EXMEM_Registers
+Compiling module xil_defaultlib.DataMem
+Compiling module xil_defaultlib.MEMWB_Registers
+Compiling module xil_defaultlib.CPU
+Compiling module xil_defaultlib.CPU_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot CPU_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/CPU_pipeline1/CPU_pipeline1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CPU_sim_behav -key {Behavioral:sim_1:Functional:CPU_sim} -tclbatch {CPU_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+source CPU_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 952.258 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/CPU_pipeline1/CPU_pipeline1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/CPU_pipeline1/CPU_pipeline1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CPU_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2458] undeclared symbol zero, assumed default net type wire [D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/ALU.v:28]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/ALUControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUControl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/Adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/DataMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/EXMEM_Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXMEM_Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/IDEX_Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IDEX_Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/IFID_Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IFID_Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/InsMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InsMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/MEMWB_Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEMWB_Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/Mulx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mulx
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/PCAdder4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCAdder4
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sim_1/new/CPU_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_sim
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/CPU_pipeline1/CPU_pipeline1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto 6202665dbceb478ca157a7172d1013b7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_sim_behav xil_defaultlib.CPU_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 5 differs from formal bit length 32 for port ifid_rs [D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/CPU.v:73]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 16 for port ins [D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/CPU.v:79]
+WARNING: [VRFC 10-278] actual bit length 48 differs from formal bit length 32 for port A [D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/CPU.v:80]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Adder
+Compiling module xil_defaultlib.Mulx
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.PCAdder4
+Compiling module xil_defaultlib.IFID_Registers
+Compiling module xil_defaultlib.InsMem
+Compiling module xil_defaultlib.Control
+Compiling module xil_defaultlib.ALUControl
+Compiling module xil_defaultlib.Registers
+Compiling module xil_defaultlib.IDEX_Registers
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.Mulx(width=1)
+Compiling module xil_defaultlib.EXMEM_Registers
+Compiling module xil_defaultlib.DataMem
+Compiling module xil_defaultlib.MEMWB_Registers
+Compiling module xil_defaultlib.CPU
+Compiling module xil_defaultlib.CPU_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot CPU_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/CPU_pipeline1/CPU_pipeline1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CPU_sim_behav -key {Behavioral:sim_1:Functional:CPU_sim} -tclbatch {CPU_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+source CPU_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 952.258 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/CPU_pipeline1/CPU_pipeline1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/CPU_pipeline1/CPU_pipeline1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CPU_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2458] undeclared symbol zero, assumed default net type wire [D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/ALU.v:28]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/ALUControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUControl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/Adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/DataMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/EXMEM_Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXMEM_Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/IDEX_Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IDEX_Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/IFID_Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IFID_Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/InsMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InsMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/MEMWB_Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEMWB_Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/Mulx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mulx
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/PCAdder4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCAdder4
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sim_1/new/CPU_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_sim
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/CPU_pipeline1/CPU_pipeline1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto 6202665dbceb478ca157a7172d1013b7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_sim_behav xil_defaultlib.CPU_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-93] rw1 is not declared under prefix jump1 [D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/CPU.v:80]
+WARNING: [VRFC 10-278] actual bit length 5 differs from formal bit length 32 for port ifid_rs [D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/CPU.v:74]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 16 for port ins [D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/CPU.v:80]
+WARNING: [VRFC 10-278] actual bit length 48 differs from formal bit length 32 for port A [D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/CPU.v:81]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/CPU_pipeline1/CPU_pipeline1.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/CPU_pipeline1/CPU_pipeline1.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/CPU_pipeline1/CPU_pipeline1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/CPU_pipeline1/CPU_pipeline1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CPU_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2458] undeclared symbol zero, assumed default net type wire [D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/ALU.v:28]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/ALUControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUControl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/Adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/DataMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/EXMEM_Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXMEM_Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/IDEX_Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IDEX_Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/IFID_Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IFID_Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/InsMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InsMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/MEMWB_Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEMWB_Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/Mulx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mulx
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/PCAdder4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCAdder4
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sim_1/new/CPU_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_sim
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/CPU_pipeline1/CPU_pipeline1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto 6202665dbceb478ca157a7172d1013b7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_sim_behav xil_defaultlib.CPU_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-93] wr1 is not declared under prefix jump1 [D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/CPU.v:80]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 16 for port ins [D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/CPU.v:80]
+WARNING: [VRFC 10-278] actual bit length 48 differs from formal bit length 32 for port A [D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/CPU.v:81]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/CPU_pipeline1/CPU_pipeline1.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/CPU_pipeline1/CPU_pipeline1.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/CPU_pipeline1/CPU_pipeline1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/CPU_pipeline1/CPU_pipeline1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CPU_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2458] undeclared symbol zero, assumed default net type wire [D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/ALU.v:28]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/ALUControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUControl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/Adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/DataMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/EXMEM_Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXMEM_Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/IDEX_Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IDEX_Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/IFID_Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IFID_Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/InsMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InsMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/MEMWB_Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEMWB_Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/Mulx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mulx
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/PCAdder4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCAdder4
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sim_1/new/CPU_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_sim
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/CPU_pipeline1/CPU_pipeline1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto 6202665dbceb478ca157a7172d1013b7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_sim_behav xil_defaultlib.CPU_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 2 differs from formal bit length 4 for port ALUop [D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/CPU.v:80]
+WARNING: [VRFC 10-278] actual bit length 48 differs from formal bit length 32 for port A [D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/CPU.v:81]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Adder
+Compiling module xil_defaultlib.Mulx
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.PCAdder4
+Compiling module xil_defaultlib.IFID_Registers
+Compiling module xil_defaultlib.InsMem
+Compiling module xil_defaultlib.Control
+Compiling module xil_defaultlib.ALUControl
+Compiling module xil_defaultlib.Mulx(width=5)
+Compiling module xil_defaultlib.Registers
+Compiling module xil_defaultlib.IDEX_Registers
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.Mulx(width=1)
+Compiling module xil_defaultlib.EXMEM_Registers
+Compiling module xil_defaultlib.DataMem
+Compiling module xil_defaultlib.MEMWB_Registers
+Compiling module xil_defaultlib.CPU
+Compiling module xil_defaultlib.CPU_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot CPU_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/CPU_pipeline1/CPU_pipeline1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CPU_sim_behav -key {Behavioral:sim_1:Functional:CPU_sim} -tclbatch {CPU_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+source CPU_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 958.594 ; gain = 2.816
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/CPU_pipeline1/CPU_pipeline1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/CPU_pipeline1/CPU_pipeline1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CPU_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2458] undeclared symbol zero, assumed default net type wire [D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/ALU.v:28]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/ALUControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUControl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/Adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/DataMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/EXMEM_Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXMEM_Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/IDEX_Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IDEX_Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/IFID_Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IFID_Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/InsMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InsMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/MEMWB_Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEMWB_Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/Mulx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mulx
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/PCAdder4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCAdder4
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sim_1/new/CPU_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_sim
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/CPU_pipeline1/CPU_pipeline1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto 6202665dbceb478ca157a7172d1013b7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_sim_behav xil_defaultlib.CPU_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 2 differs from formal bit length 4 for port ALUop [D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/CPU.v:80]
+WARNING: [VRFC 10-278] actual bit length 48 differs from formal bit length 32 for port A [D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/CPU.v:81]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Adder
+Compiling module xil_defaultlib.Mulx
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.PCAdder4
+Compiling module xil_defaultlib.IFID_Registers
+Compiling module xil_defaultlib.InsMem
+Compiling module xil_defaultlib.Control
+Compiling module xil_defaultlib.ALUControl
+Compiling module xil_defaultlib.Mulx(width=5)
+Compiling module xil_defaultlib.Registers
+Compiling module xil_defaultlib.IDEX_Registers
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.Mulx(width=1)
+Compiling module xil_defaultlib.EXMEM_Registers
+Compiling module xil_defaultlib.DataMem
+Compiling module xil_defaultlib.MEMWB_Registers
+Compiling module xil_defaultlib.CPU
+Compiling module xil_defaultlib.CPU_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot CPU_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/CPU_pipeline1/CPU_pipeline1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CPU_sim_behav -key {Behavioral:sim_1:Functional:CPU_sim} -tclbatch {CPU_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+source CPU_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 959.246 ; gain = 0.371
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/CPU_pipeline1/CPU_pipeline1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/CPU_pipeline1/CPU_pipeline1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CPU_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2458] undeclared symbol zero, assumed default net type wire [D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/ALU.v:28]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/ALUControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUControl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/Adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/DataMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/EXMEM_Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXMEM_Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/IDEX_Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IDEX_Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/IFID_Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IFID_Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/InsMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InsMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/MEMWB_Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEMWB_Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/Mulx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mulx
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/PCAdder4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCAdder4
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_pipeline1/CPU_pipeline1.srcs/sim_1/new/CPU_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_sim
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/CPU_pipeline1/CPU_pipeline1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto 6202665dbceb478ca157a7172d1013b7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_sim_behav xil_defaultlib.CPU_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 2 differs from formal bit length 4 for port ALUop [D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/CPU.v:80]
+WARNING: [VRFC 10-278] actual bit length 48 differs from formal bit length 32 for port A [D:/CPU_pipeline1/CPU_pipeline1.srcs/sources_1/new/CPU.v:81]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Adder
+Compiling module xil_defaultlib.Mulx
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.PCAdder4
+Compiling module xil_defaultlib.IFID_Registers
+Compiling module xil_defaultlib.InsMem
+Compiling module xil_defaultlib.Control
+Compiling module xil_defaultlib.ALUControl
+Compiling module xil_defaultlib.Mulx(width=5)
+Compiling module xil_defaultlib.Registers
+Compiling module xil_defaultlib.IDEX_Registers
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.Mulx(width=1)
+Compiling module xil_defaultlib.EXMEM_Registers
+Compiling module xil_defaultlib.DataMem
+Compiling module xil_defaultlib.MEMWB_Registers
+Compiling module xil_defaultlib.CPU
+Compiling module xil_defaultlib.CPU_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot CPU_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/CPU_pipeline1/CPU_pipeline1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CPU_sim_behav -key {Behavioral:sim_1:Functional:CPU_sim} -tclbatch {CPU_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+source CPU_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 971.270 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 30 17:16:44 2022...
