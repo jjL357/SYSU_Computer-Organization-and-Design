@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Dec 16 17:18:25 2022
+# Process ID: 13936
+# Current directory: D:/Vivado/PipelineCPU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2484 D:\Vivado\PipelineCPU\PipelineCPU.xpr
+# Log file: D:/Vivado/PipelineCPU/vivado.log
+# Journal file: D:/Vivado/PipelineCPU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Vivado/PipelineCPU/PipelineCPU.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source PipelineCPU_sim.tcl
+close_sim
+launch_simulation
+source PipelineCPU_sim.tcl
+close_sim
+launch_simulation
+source PipelineCPU_sim.tcl
+close_sim
+launch_simulation
+source PipelineCPU_sim.tcl
+close_sim

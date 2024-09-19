@@ -1,0 +1,99 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Thu Dec 15 14:43:25 2022
+# Process ID: 37684
+# Current directory: D:/PipelineCPU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent48644 D:\PipelineCPU\PipelineCPU.xpr
+# Log file: D:/PipelineCPU/vivado.log
+# Journal file: D:/PipelineCPU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/PipelineCPU/PipelineCPU.xpr
+update_compile_order -fileset sources_1
+save_project_as project_5 D:/project_5 -force
+launch_simulation
+source PipelineCPU_sim.tcl
+close_sim
+launch_simulation
+source PipelineCPU_sim.tcl
+close_sim
+launch_simulation
+source PipelineCPU_sim.tcl
+close_sim
+launch_simulation
+source PipelineCPU_sim.tcl
+close_sim
+launch_simulation
+source PipelineCPU_sim.tcl
+close_sim
+launch_simulation
+source PipelineCPU_sim.tcl
+close_sim
+launch_simulation
+source PipelineCPU_sim.tcl
+close_sim
+launch_simulation
+source PipelineCPU_sim.tcl
+close_sim
+launch_simulation
+source PipelineCPU_sim.tcl
+close_sim
+launch_simulation
+source PipelineCPU_sim.tcl
+close_sim
+launch_simulation
+source PipelineCPU_sim.tcl
+close_sim
+launch_simulation
+source PipelineCPU_sim.tcl
+close_sim
+launch_simulation
+source PipelineCPU_sim.tcl
+close_sim
+launch_simulation
+source PipelineCPU_sim.tcl
+close_sim
+launch_simulation
+source PipelineCPU_sim.tcl
+close_sim
+launch_simulation
+source PipelineCPU_sim.tcl
+close_sim
+launch_simulation
+source PipelineCPU_sim.tcl
+close_sim
+launch_simulation
+source PipelineCPU_sim.tcl
+close_sim
+launch_simulation
+source PipelineCPU_sim.tcl
+close_sim
+launch_simulation
+source PipelineCPU_sim.tcl
+close_sim
+launch_simulation
+source PipelineCPU_sim.tcl
+close_sim
+launch_simulation
+source PipelineCPU_sim.tcl
+close_sim
+launch_simulation
+source PipelineCPU_sim.tcl
+close_sim
+launch_simulation
+source PipelineCPU_sim.tcl
+close_sim
+launch_simulation
+source PipelineCPU_sim.tcl
+close_sim
+launch_simulation
+source PipelineCPU_sim.tcl
+close_sim
+launch_simulation
+source PipelineCPU_sim.tcl
+close_sim
+launch_simulation
+source PipelineCPU_sim.tcl
+close_sim
