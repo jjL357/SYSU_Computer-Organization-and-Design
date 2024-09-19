@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Tue Nov 22 20:48:51 2022
+# Process ID: 37132
+# Current directory: D:/pmd
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16656 D:\pmd\pmd.xpr
+# Log file: D:/pmd/vivado.log
+# Journal file: D:/pmd\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/pmd/pmd.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/pmd/pmd.srcs'.
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2018.1/data/ip'.
+INFO: [IP_Flow 19-2338] Canceling the changes to the IP catalog. Reverting the catalog back to its previous state.
+INFO: [IP_Flow 19-2340] The IP catalog has been returned to its previous state.
+INFO: [Common 17-344] 'open_project' was cancelled
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 22 20:49:20 2022...

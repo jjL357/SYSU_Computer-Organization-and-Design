@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Sun Nov  6 22:07:02 2022
+# Process ID: 23808
+# Current directory: D:/pmd
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23320 D:\pmd\pmd.xpr
+# Log file: D:/pmd/vivado.log
+# Journal file: D:/pmd\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/pmd/pmd.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/pmd/pmd.srcs'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2018.1/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 862.293 ; gain = 121.891
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Nov  7 20:47:04 2022...

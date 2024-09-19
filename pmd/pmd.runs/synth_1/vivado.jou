@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Wed Nov 23 00:24:16 2022
+# Process ID: 23764
+# Current directory: D:/pmd/pmd.runs/synth_1
+# Command line: vivado.exe -log pmd1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source pmd1.tcl
+# Log file: D:/pmd/pmd.runs/synth_1/pmd1.vds
+# Journal file: D:/pmd/pmd.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source pmd1.tcl -notrace

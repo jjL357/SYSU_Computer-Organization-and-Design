@@ -1,0 +1,64 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Tue Nov  8 20:31:04 2022
+# Process ID: 31004
+# Current directory: D:/pmd
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17228 D:\pmd\pmd.xpr
+# Log file: D:/pmd/vivado.log
+# Journal file: D:/pmd\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/pmd/pmd.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/pmd/pmd.srcs'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2018.1/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 873.062 ; gain = 125.949
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/pmd/pmd.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'pmd_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/pmd/pmd.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj pmd_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/pmd/pmd.srcs/sources_1/new/p1381.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module p1381
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/pmd/pmd.srcs/sim_1/new/pmd_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pmd_sim
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/pmd/pmd.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto dd1b5f8377fb48e0a0e1fac3b4199254 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pmd_sim_behav xil_defaultlib.pmd_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.p1381
+Compiling module xil_defaultlib.pmd_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot pmd_sim_behav
+
+****** Webtalk v2018.1 (64-bit)
+  **** SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+  **** IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source D:/pmd/pmd.sim/sim_1/behav/xsim/xsim.dir/pmd_sim_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run_program: Time (s): cpu = 00:00:05 ; elapsed = 00:00:56 . Memory (MB): peak = 906.020 ; gain = 3.203
+INFO: [Common 17-344] 'run_program' was cancelled
+INFO: [Vivado 12-5357] 'elaborate' step aborted
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:01:01 . Memory (MB): peak = 906.020 ; gain = 3.203
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 10 17:25:34 2022...
