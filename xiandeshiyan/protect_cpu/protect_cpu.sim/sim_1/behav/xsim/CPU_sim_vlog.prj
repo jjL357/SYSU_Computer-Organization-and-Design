@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../protect_cpu.srcs/sources_1/new/Add.v" \
+"../../../../protect_cpu.srcs/sources_1/new/CPU.v" \
+"../../../../protect_cpu.srcs/sources_1/new/InsMem.v" \
+"../../../../protect_cpu.srcs/sources_1/new/PC.v" \
+"../../../../protect_cpu.srcs/sim_1/new/CPU_sim.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

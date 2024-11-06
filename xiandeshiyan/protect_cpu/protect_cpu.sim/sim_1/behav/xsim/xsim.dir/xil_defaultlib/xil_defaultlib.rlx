@@ -1,0 +1,10 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+C:/Users/86191/Desktop/protect_cpu/protect_cpu.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+C:/Users/86191/Desktop/protect_cpu/protect_cpu.srcs/sim_1/new/CPU_sim.v,1668255586,verilog,,,,CPU_sim,,,,,,,,
+C:/Users/86191/Desktop/protect_cpu/protect_cpu.srcs/sources_1/new/Add.v,1668255065,verilog,,C:/Users/86191/Desktop/protect_cpu/protect_cpu.srcs/sources_1/new/CPU.v,,Add,,,,,,,,
+C:/Users/86191/Desktop/protect_cpu/protect_cpu.srcs/sources_1/new/CPU.v,1668255770,verilog,,C:/Users/86191/Desktop/protect_cpu/protect_cpu.srcs/sources_1/new/InsMem.v,,CPU,,,,,,,,
+C:/Users/86191/Desktop/protect_cpu/protect_cpu.srcs/sources_1/new/InsMem.v,1668255228,verilog,,C:/Users/86191/Desktop/protect_cpu/protect_cpu.srcs/sources_1/new/PC.v,,InsMem,,,,,,,,
+C:/Users/86191/Desktop/protect_cpu/protect_cpu.srcs/sources_1/new/PC.v,1668254294,verilog,,C:/Users/86191/Desktop/protect_cpu/protect_cpu.srcs/sim_1/new/CPU_sim.v,,PC,,,,,,,,
